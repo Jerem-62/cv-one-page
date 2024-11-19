@@ -31,13 +31,13 @@
           <hr>
           <h2>Technicien de Maintenance Informatique, Support de proximité N2</h2>
         </div>
+        <canvas id="Matrix"></canvas>
         <div class="navbar col-3 col-lg-8">
           <nav class="hidden-md-down">
             <ul>
               <li><a class="scroll hvr-underline-from-left" id="about" href="#">A propos</a></li>
               <li><a class="scroll hvr-underline-from-left" id="skill" href="#">Compétences</a></li>
               <li><a class="scroll hvr-underline-from-left" id="experience" href="#">Expériences</a></li>
-              <li><a class="scroll hvr-underline-from-left" id="contact" href="#">Contact</a></li>
               <!-- <li><a class="scroll hvr-underline-from-left" id="work" href="#">Réalisations</a></li> -->
               <!-- <li><a class="scroll hvr-underline-from-left" id="Contact" href="#">Contact</a></li> -->
             </ul>
@@ -270,17 +270,43 @@
       <p>A venir</p> 
     </div>
   </section> -->
-<section class="contact">
-  <h1>Contact</h1>
-  <form submit="return false"></form>
-  <input type="text" placeholder="Entrez votre nom" id="lastname" />
-  <br></br>
-   <input type="text" placeholder="Entrez votre prénom" id="firstname" /></br>
-   <input type="text" placeholder="Entrez votre email" id="email" /></br>
-   <span>Quelle est votre question</span></br>
-   <textarea id="question" rows="4"></textarea></br>
-  </section>
 
+<<<<<<< HEAD
+  <!--
+<section class="Contact">
+    <div class="contact">
+  <input type="text" id="fullName" placeholder="Nom" required /><br />
+  <input type="email" id="email_id" placeholder="Email" required /><br />
+   <textarea id="message" placeholder="Message" required /></textarea><br /><br />
+   <button onClick="sendMail()" value="reset">Send</button>
+   </div>
+</form>
+</section>  -->
+
+
+   <!--<section class="Contact">
+   <div class="form-container">
+    <h2>Contactez-moi</h2>
+    <hr>
+    <form onsubmit="sendEmail(); reset(); return false">
+      <input type="text" id="name" placeholder="Votre nom" required/>
+      <input type="email" id="email" placeholder="Email" required/>
+      <textarea id="message" rows="4" placeholder="Votre message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+   </section> -->
+   <!-- <form action="https://formsubmit.co/laiho62@yahoo.fr" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" required>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/valid.html">
+      <input type="hidden" name="_subject" value="New mail">
+      <input type="email" name="email" required>
+      <input type="text" name="message" placeholder="write your message here" required>
+      <button type="submit">Envoyer</button> 
+    </form> -->
+=======
+>>>>>>> a980a3da9e7f0eb3a1d16a6efad383c97f09e1a3
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -296,8 +322,16 @@
   <script src="js/lightbox.min.js"></script>
   <script src="js/harrycover.js"></script>
   <script src="js/download.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="/js/form.js"></script>
-
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+  publicKey: "I2BYR0e-XGYXBCV3Y",
+});
+})();
+</script>
 </body>
 </html>
